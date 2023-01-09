@@ -1,0 +1,70 @@
+{
+  "name": "whatido_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "prod": "pm2-runtime start ecosystem.config.js --env production"
+  },
+  "repository": "git+https://github.com/donnies-list/whatido_server.git",
+  "author": "runtee <ekwo.chinonso.01@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donnies-list/whatido_server/issues"
+  },
+  "homepage": "https://github.com/donnies-list/whatido_server#readme",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "aws-sdk": "^2.985.0",
+    "axios": "^0.27.2",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "express-session": "^1.17.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "get-video-duration": "^4.1.0",
+    "http": "^0.0.1-security",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.13.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.3",
+    "multer-s3": "^2.9.0",
+    "node-cron": "^3.0.0",
+    "node-email-validation": "^1.0.4",
+    "nodemailer": "^6.6.2",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "opentok-token": "^1.1.1",
+    "otp-generator": "^4.0.0",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-facebook-token": "^4.0.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "query-string-hash": "^1.0.6",
+    "redis": "^4.5.1",
+    "request": "^2.88.2",
+    "socket.io": "^4.5.4",
+    "twilio": "^3.65.0",
+    "uuid": "^8.3.2",
+    "uuidv4": "^6.2.12",
+    "web-push": "^3.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
